@@ -1,0 +1,28 @@
+<!-- templates/register.html -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Register</title>
+        <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Register</h1>
+            <form action="{{ url_for('register') }}" method="post">
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" required>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" required>
+                </div>
+                <div>
+                    <label for="confirmation">Confirm Password:</label>
+                    <input type="password" name="confirmation" required>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </body>
+</html>

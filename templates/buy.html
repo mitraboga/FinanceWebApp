@@ -1,0 +1,24 @@
+<!-- templates/buy.html -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Buy</title>
+        <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Buy Stock</h1>
+            <form action="{{ url_for('buy') }}" method="post">
+                <div>
+                    <label for="symbol">Stock Symbol:</label>
+                    <input type="text" name="symbol" required>
+                </div>
+                <div>
+                    <label for="shares">Number of Shares:</label>
+                    <input type="number" name="shares" min="1" required>
+                </div>
+                <button type="submit">Buy</button>
+            </form>
+        </div>
+    </body>
+</html>

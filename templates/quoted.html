@@ -1,0 +1,15 @@
+<!-- templates/quoted.html -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Stock Quote</title>
+        <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Stock Quote</h1>
+            <p>The price of {{ name }} ({{ symbol }}) is ${{ price }}.</p>
+            <a href="{{ url_for('quote') }}">Get another quote</a>
+        </div>
+    </body>
+</html>

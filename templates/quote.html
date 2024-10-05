@@ -1,0 +1,20 @@
+<!-- templates/quote.html -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Get Stock Quote</title>
+        <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Stock Quote</h1>
+            <form action="{{ url_for('quote') }}" method="post">
+                <div>
+                    <label for="symbol">Stock Symbol:</label>
+                    <input type="text" name="symbol" required>
+                </div>
+                <button type="submit">Get Quote</button>
+            </form>
+        </div>
+    </body>
+</html>

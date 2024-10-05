@@ -1,0 +1,28 @@
+<!-- templates/sell.html -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sell</title>
+        <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Sell Stock</h1>
+            <form action="{{ url_for('sell') }}" method="post">
+                <div>
+                    <label for="symbol">Stock Symbol:</label>
+                    <select name="symbol" required>
+                        {% for stock in stocks %}
+                        <option value="{{ stock.symbol }}">{{ stock.symbol }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div>
+                    <label for="shares">Number of Shares:</label>
+                    <input type="number" name="shares" min="1" required>
+                </div>
+                <button type="submit">Sell</button>
+            </form>
+        </div>
+    </body>
+</html>
