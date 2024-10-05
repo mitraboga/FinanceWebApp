@@ -1,6 +1,8 @@
 # Finance Web App
 Implementation of a Web Application for Harvard CS50 Students to "buy" and "sell" Stocks!
 
+## Demo
+![image](https://user-images.githubusercontent.com/92586852/213960254-d1c3dffe-24d1-4139-ae16-004316e6e02d.png)
 Reproduce web application
 =========================
 
