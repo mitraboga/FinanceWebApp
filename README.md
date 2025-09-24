@@ -15,7 +15,7 @@ python -m venv [directory]
 
 - activate venv - [here python docs](https://docs.python.org/3/tutorial/venv.html);
 
-- install the requirements in virtual environment;
+- install the requirements in a virtual environment;
 ```bash
 pip install -r requirements.txt
 ```
